@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap demo</title>
+
+    <!-- link for bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+   
+  </head>
+  <body>
+    <!-- this link for js -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+    <main>
+      <header>
+        <nav class="navbar navbar-expand-lg shadow fixed-top py-2" aria-label="Offcanvas navbar large">
+          <div class="container-fluid">
+          <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+            <a class="navbar-brand "> Hospital</a>
+            
+          
+            
+            <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+              <div class="offcanvas-header">
+                
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/pages/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/registeration.html">Register</a>
+                  </li>
+                  <li class="nav-item login-button">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ModalForm"
+                    >
+                       Login</a
+                    >
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Services
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Book appointmen</a></li>
+                      <li><a class="dropdown-item" href="#"> Visit patient</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+                      <li><a class="dropdown-item" href="#">Job platform</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/pages/Ar_index.html">عربي</a>
+                   
+                  </li>
+                
+                </ul>
+                
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      
+      
+    <div class="modal fade" id="ModalForm" tabindex="-1" aria-labelledby="ModalFormLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="myform bg-dark">
+                    <h1 class="text-center">Login Form</h1>
+                    <form>
+                        <div class="mb-3 mt-4">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <button type="submit" class="btn btn-light mt-3">Login</button>
+                        <p>Not a member? <a href="/pages/registeration.html">Register</a></p>
+                    </form>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- side menu------------- -->
+    <div class="offcanvas offcanvas-start" id="demo">
+      <div class="offcanvas-header">
+        <h1 class="offcanvas-title">FAQs</h1>
+        
+      </div>
+      <div class="offcanvas-body">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                Working hours?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+              <div class="accordion-body">
+                <strong>Hours:</strong><br>
+                Sunday	8am-4pm <br>
+                Monday	8am-4pm <br>
+                Tuesday	8am-4pm <br>
+                Wednesday	8am-4pm <br>
+                Thursday	8am-4pm <br>
+                Friday	<span style="color: red;">Closed</span> <br>
+                Saturday	<span style="color: red;">Closed</span>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                Directions?
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+              <div class="accordion-body">
+                <strong>
+                  <!--Google map-->
+<div id="map-container-google-1" class="z-depth-1-half map-container" style="height: auto">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.2013765465786!2d39.87895961530334!3d21.381974085808057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204351e2eca15%3A0x49dd175b0b393113!2sKing%20Abdullah%20Medical%20City%20Specialist%20Hospital!5e0!3m2!1sen!2ssa!4v1679908133998!5m2!1sen!2ssa" width=100% height=auto style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </iframe>
+</div>
+
+               
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      
+      </div>
+    </div>
+
+    <!-- ------------------------caroosel ------------------------>
+    
+    
+    <div id="carouselExampleCaptions" class="carousel slide shadow py-0" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/images/3.jpg" class="d-block w-100" alt="Hellow ">
+          <div class="carousel-caption ">
+           
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <img src="/images/4.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption">
+            
+            <p>Reprehenderit magni et eos ipsum ut atque rerum cum? Mollitia perferendis similique cupiditate alias sapiente nisi eum sequi!</p>
+          </div>
+        </div>
+
+        <div class="carousel-item ">
+          <img src="/images/5.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption ">
+            
+            <p>Quidem molestiae illo rerum quod qui itaque, excepturi provident! Dolor, reiciendis magnam autem, aperiam voluptatem cumque praesentium dolorem ducimus sequi.</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  
+
+    <!-- ----------------------------------------------------------- -->
+
+
+    <!--------------------------------------------- services---------------------------- -->
+    <h1 class="services-title">Services</h1>
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12">
+              <div class="section-title text-center mb-4 pb-2">
+                 
+              </div>
+          </div><!--end col-->
+      </div><!--end row-->
+  
+      <div class="row">
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+              <div class="card service-wrapper rounded border-0 shadow p-4">
+                  <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                      <span class="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><rect width="20" height="15" x="2" y="3" class="uim-tertiary" rx="3"></rect><path class="uim-primary" d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z"></path></svg></span>
+                  </div>
+                  <div class="content mt-4">
+                      <h5 class="title">Book an apointment</h5>
+                      <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                      <div class="mt-3">
+                          <a href="javascript:void(0)" class="text-custom">Read More <i class="mdi mdi-chevron-right"></i></a>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div><!--end col-->
+  
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+              <div class="card service-wrapper rounded border-0 shadow p-4">
+                  <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                      <span class="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" viewBox="0 0 24 24" width="1em"><path class="uim-quaternary" d="M15,2c-3.3772,0.00142-6.27155,2.41462-6.88025,5.73651c2.90693-1.59074,6.553-0.52375,8.14374,2.38317c0.98206,1.79462,0.98206,3.96594,0,5.76057c3.8013-0.69634,6.31837-4.3424,5.62202-8.14369C21.27662,4.41261,18.37925,1.99872,15,2z"></path><circle cx="7" cy="17" r="5" class="uim-primary"></circle><path class="uim-tertiary" d="M11,7c-3.08339,0.00031-5.66461,2.33759-5.97,5.40582c2.5358-1.08949,5.47469,0.08297,6.56418,2.61877c0.54113,1.25947,0.54113,2.68593,0,3.94541c3.29729-0.32786,5.7045-3.26663,5.37664-6.56392C16.66569,9.33735,14.08386,6.99972,11,7z"></path></svg></span>
+                  </div>
+                  <div class="content mt-4">
+                      <h5 class="title">Visit patient</h5>
+                      <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                      <div class="mt-3">
+                          <a href="javascript:void(0)" class="text-custom">Read More <i class="mdi mdi-chevron-right"></i></a>
+                      </div>
+                  </div>
+                 
+              </div>
+          </div><!--end col-->
+          
+          <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+              <div class="card service-wrapper rounded border-0 shadow p-4">
+                  <div class="icon text-center text-custom h1 shadow rounded bg-white">
+                      <span class="uim-svg" ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em"><path class="uim-quaternary" d="M6,23H2a.99974.99974,0,0,1-1-1V16a.99974.99974,0,0,1,1-1H6a.99974.99974,0,0,1,1,1v6A.99974.99974,0,0,1,6,23Z"></path><path class="uim-tertiary" d="M14,23H10a.99974.99974,0,0,1-1-1V10a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,14,23Z"></path><path class="uim-primary" d="M22,23H18a.99974.99974,0,0,1-1-1V2a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,22,23Z"></path></svg></span>
+                  </div>
+                  <div class="content mt-4">
+                      <h5 class="title">Apply for a job</h5>
+                      <p class="text-muted mt-3 mb-0">It is a long established fact that a reader will be distracted by the when looking at its layout.</p>
+                      <div class="mt-3">
+                          <a href="javascript:void(0)" class="text-custom">Read More <i class="mdi mdi-chevron-right"></i></a>
+                      </div>
+                  </div>
+                 
+              </div>
+          </div><!--end col-->
+
+      </div><!--end row-->
+  </div>
+
+   <!-- ---------------------------------- -->
+
+
+    <!-- FAQ -->
+    <section id="faq" class="py-5">
+      <!-- <h2 class="my-5 text-center">FAQ</h2> -->
+
+
+
+    </section>
+      
+    <div class="container">
+      <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-7 mb-7">
+          <li class="nav-item"><a href="/pages/index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="/pages/FAQ.html" class="nav-link px-2 text-muted">FAQs</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About us</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Email us</a></li>
+        </ul>
+        <p class="text-center text-muted">© 2023 King Abdullah Medical City</p>
+      </footer>
+    </div>
+    <!-- ------------------------------------------------------- -->
+   
+
+    </main>
+
+  </body>
+</html>

@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/Ar_styles.css" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.rtl.min.css" integrity="sha384-DOXMLfHhQkvFFp+rWTZwVlPVqdIhpDVYT9csOnHSgWQWPX0v5MCGtjCJbY6ERspU" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <title>المستشفى</title>
+    <title>الصفحة الرئيسية</title>
+   
+<script src="offcanvas.js"></script>
+    
+
+  </head>
+  <body>
+    <body>
+      <main>
+        <header>
+          
+          <!-- <nav class="navbar navbar-expand-lg shadow fixed-top py-2">
+            
+            <div class="container">
+              <a class="navbar-brand" href="/pages/index.html">KAMC</a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-abel="Toggle navigation"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1.5em"
+                  height="1.5em"
+                  fill="white"
+                  class="bi bi-justify-left"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M2 12.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"
+                  />
+                </svg>
+              </button>
+
+
+              
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/pages/index.html"
+                      >الرئيسية</a
+                    >
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/pages/registeration.html"
+                      >التسجيل</a
+                    >
+                  </li>
+
+                  <li class="nav-item login-button">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      data-bs-toggle="modal"
+                      data-bs-target="#ModalForm"
+                    >
+                      تسجيل الدخول</a
+                    >
+                  </li>
+
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      خدمات
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">حجز موعد</a></li>
+                      <li><a class="dropdown-item" href="#">زيارة مريض</a></li>
+                      <li><hr class="dropdown-divider" /></li>
+                      <li>
+                        <a class="dropdown-item" href="#">بوابة الوظائف</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a
+                      class="nav-link active"
+                      aria-current="page"
+                      href="/pages/index.html"
+                      >English</a
+                    >
+                  </li>
+
+                  <a class="navbar-brand"><i class="fa fa-question-circle"  data-bs-toggle="offcanvas" data-bs-target="#demo" ></i></a>
+                </ul>
+              </div>
+            </div>
+          </nav>  -->
+
+          <nav class="navbar navbar-expand-lg shadow fixed-top py-2" aria-label="Offcanvas navbar large">
+            <div class="container-fluid">
+            <button class="navbar-toggler me-auto" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+              <a class="navbar-brand" href="#">مستشفى الملك</a>
+              
+            
+              
+              <div class="offcanvas offcanvas-start text-bg-dark" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+                <div class="offcanvas-header">
+                  
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="/pages/Ar_index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/pages/Ar_reg.html">التسجيل</a>
+                    </li>
+                    <li class="nav-item login-button">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        data-bs-toggle="modal"
+                        data-bs-target="#ModalForm"
+                      >
+                        تسجيل الدخول</a
+                      >
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        الخدمات
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">حجز موعد</a></li>
+                        <li><a class="dropdown-item" href="#">زيارة مريض</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">بوابة التوظيف</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="/pages/index.html">EN</a>
+                     
+                    </li>
+                  
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </nav>
+
+       
+         
+          
+
+
+
+        </header>
+
+        <!-- -------------------تسجيل الدخول-------------------- -->
+        <div
+          class="modal fade"
+          id="ModalForm"
+          tabindex="-1"
+          aria-labelledby="ModalFormLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body">
+                <button
+                  type="button"
+                  class="btn-close btn-close-white"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+                <div class="myform bg-dark">
+                  <h1 class="text-center">صفحة تسجيل الدخول</h1>
+                  <form>
+                    <div class="mb-3 mt-4">
+                      <label for="exampleInputEmail1" class="form-label"
+                        >الإيميل</label
+                      >
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                      />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label"
+                        >كلمة السر</label
+                      >
+                      <input
+                        type="password"
+                        class="form-control"
+                        id="exampleInputPassword1"
+                      />
+                    </div>
+                    <button type="submit" class="btn btn-light mt-3">
+                      تسجيل دخول
+                    </button>
+                    <p>
+                      لست عضواً؟
+                      <a href="/pages/registeration.html">سجل الان</a>
+                    </p>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ----------------------------------------------------------- -->
+
+        <!-- side menu------------- -->
+        <div class="offcanvas offcanvas-start rtl-show" id="demo">
+          <div class="offcanvas-header">
+            <h1 class="offcanvas-title">الأسئلة المتكررة</h1>
+            
+          </div>
+          <div class="offcanvas-body">
+            <div class="accordion" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    مواعيد العمل
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  <div class="accordion-body">
+                    <strong>Hours:</strong><br>
+                    Sunday	8am-4pm <br>
+                    Monday	8am-4pm <br>
+                    Tuesday	8am-4pm <br>
+                    Wednesday	8am-4pm <br>
+                    Thursday	8am-4pm <br>
+                    Friday	<span style="color: red;">Closed</span> <br>
+                    Saturday	<span style="color: red;">Closed</span>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    الموقع
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                  <div class="accordion-body">
+                    <strong>
+                      <!--Google map-->
+    <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: auto">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.2013765465786!2d39.87895961530334!3d21.381974085808057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c204351e2eca15%3A0x49dd175b0b393113!2sKing%20Abdullah%20Medical%20City%20Specialist%20Hospital!5e0!3m2!1sen!2ssa!4v1679908133998!5m2!1sen!2ssa" width=100% height=auto style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </iframe>
+    </div>
+    
+                   
+                  </div>
+                </div>
+              </div>
+             
+            </div>
+          
+          </div>
+        </div>
+
+        
+        <!-- ------------------------------------------------------------------------------------- -->
+        
+
+        <!------------------------------------ السلايد المتحرك--------------------------------------------- -->
+
+        <div
+          id="myCarousel"
+          class="carousel slide shadow py-0"
+          data-bs-ride="carousel"
+          interveal="false"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="0"
+              class=""
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+              class="active"
+              aria-current="true"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#myCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+              class=""
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/images/4.jpg"
+                alt="First slide"
+                width="100%"
+                height="100%"
+              />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>عنوان المثال.</h1>
+                  <p>
+                    تشير الدراسات الإحصائية حسب الجمعية الأمريكية للغات بأن
+                    الإقبال على العربية زاد %126 في الولايات المتحدة الأمريكية
+                    وحدها بين عامي 2002 و2009م.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">سجل اليوم</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active">
+              <img
+                class="d-block w-100"
+                src="/images/5.jpg"
+                alt="First slide"
+                width="100%"
+                height="100%"
+              />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>عنوان مثال آخر.</h1>
+                  <p>
+                    حسب المجلس الثقافي البريطاني فإن تعليم الإنجليزية داخل
+                    بريطانيا يسهم في تعزيز اقتصادها بما يتجاوز ملياري جنيه
+                    سنوياً، كما أنه وفر أكثر من 26 ألف وظيفة.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">أعرف أكثر</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img
+                class="d-block w-100"
+                src="/images/3.jpg"
+                alt="First slide"
+                width="100%"
+                height="100%"
+              />
+
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>واحد أكثر لقياس جيد.</h1>
+                  <p>
+                    الإحصاءات لحجم الاستثمار اللغوي خارج بريطانيا تتفاوت من سنة
+                    لأخرى إلا أن المدير التنفيذي للمجلس الثقافي البريطاني إدي
+                    بايرز يرى أن استثمار تعليم الإنجليزية في الخارج لا يحسب على
+                    المستوى المالي فحسب بل على المستوى السياسي أيضاً.
+                  </p>
+                  <p>
+                    <a class="btn btn-lg btn-primary" href="#">تصفح المعرض</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+          </button>
+        </div>
+        <!-- ------------------------------------------------------------------ -->
+
+        <h1 class="services-title">الخدمات</h1>
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12">
+              <div class="section-title text-center mb-4 pb-2"></div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+              <div class="card service-wrapper rounded border-0 shadow p-4">
+                <div
+                  class="icon text-center text-custom h1 shadow rounded bg-white"
+                >
+                  <span class="uim-svg"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <rect
+                        width="20"
+                        height="15"
+                        x="2"
+                        y="3"
+                        class="uim-tertiary"
+                        rx="3"
+                      ></rect>
+                      <path
+                        class="uim-primary"
+                        d="M16,21H8a.99992.99992,0,0,1-.832-1.55469l4-6a1.03785,1.03785,0,0,1,1.66406,0l4,6A.99992.99992,0,0,1,16,21Z"
+                      ></path></svg
+                  ></span>
+                </div>
+                <div class="content mt-4">
+                  <h5 class="title">إحجز موعد</h5>
+                  <p class="text-muted mt-3 mb-0">خدمة حجز الموعد</p>
+                  <div class="mt-3">
+                    <a href="javascript:void(0)" class="text-custom"
+                      >الدخول للخدمة <i class="mdi mdi-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+              <div class="card service-wrapper rounded border-0 shadow p-4">
+                <div
+                  class="icon text-center text-custom h1 shadow rounded bg-white"
+                >
+                  <span class="uim-svg"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      enable-background="new 0 0 24 24"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        class="uim-quaternary"
+                        d="M15,2c-3.3772,0.00142-6.27155,2.41462-6.88025,5.73651c2.90693-1.59074,6.553-0.52375,8.14374,2.38317c0.98206,1.79462,0.98206,3.96594,0,5.76057c3.8013-0.69634,6.31837-4.3424,5.62202-8.14369C21.27662,4.41261,18.37925,1.99872,15,2z"
+                      ></path>
+                      <circle cx="7" cy="17" r="5" class="uim-primary"></circle>
+                      <path
+                        class="uim-tertiary"
+                        d="M11,7c-3.08339,0.00031-5.66461,2.33759-5.97,5.40582c2.5358-1.08949,5.47469,0.08297,6.56418,2.61877c0.54113,1.25947,0.54113,2.68593,0,3.94541c3.29729-0.32786,5.7045-3.26663,5.37664-6.56392C16.66569,9.33735,14.08386,6.99972,11,7z"
+                      ></path></svg
+                  ></span>
+                </div>
+                <div class="content mt-4">
+                  <h5 class="title">زيارة مريض</h5>
+                  <p class="text-muted mt-3 mb-0">خدمة زيارة المريض</p>
+                  <div class="mt-3">
+                    <a href="javascript:void(0)" class="text-custom"
+                      >الدخول للخدمة <i class="mdi mdi-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+
+            <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
+              <div class="card service-wrapper rounded border-0 shadow p-4">
+                <div
+                  class="icon text-center text-custom h1 shadow rounded bg-white"
+                >
+                  <span class="uim-svg"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="1em"
+                    >
+                      <path
+                        class="uim-quaternary"
+                        d="M6,23H2a.99974.99974,0,0,1-1-1V16a.99974.99974,0,0,1,1-1H6a.99974.99974,0,0,1,1,1v6A.99974.99974,0,0,1,6,23Z"
+                      ></path>
+                      <path
+                        class="uim-tertiary"
+                        d="M14,23H10a.99974.99974,0,0,1-1-1V10a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,14,23Z"
+                      ></path>
+                      <path
+                        class="uim-primary"
+                        d="M22,23H18a.99974.99974,0,0,1-1-1V2a.99974.99974,0,0,1,1-1h4a.99974.99974,0,0,1,1,1V22A.99974.99974,0,0,1,22,23Z"
+                      ></path></svg
+                  ></span>
+                </div>
+                <div class="content mt-4">
+                  <h5 class="title">التقديم على وظيفة</h5>
+                  <p class="text-muted mt-3 mb-0">خدمة التقديم على الوظائف</p>
+                  <div class="mt-3">
+                    <a href="javascript:void(0)" class="text-custom"
+                      >الدخول للخدمة <i class="mdi mdi-chevron-right"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--end col-->
+          </div>
+          <!--end row-->
+        </div>
+
+        <div class="container">
+          <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-7 mb-7">
+              <li class="nav-item">
+                <a href="/pages/Ar_index.html" class="nav-link px-2 text-muted"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="/pages/FAQ.html" class="nav-link px-2 text-muted"
+                  >الأسئلة المتكررة</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">من نحن؟</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link px-2 text-muted">تواصل معنا</a>
+              </li>
+            </ul>
+            <p class="text-center text-muted">مدينة الملك عبدالله الطبية©</p>
+          </footer>
+        </div>
+      </main>
+    </body>
+  </body>
+</html>

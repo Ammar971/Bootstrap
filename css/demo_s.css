@@ -1,0 +1,10 @@
+@media (width: 390px) {
+  .navbar-toggler-icon{
+    visibility: hidden;
+    /* background-color: green !important; */
+  }
+  .offcanvas-btn{
+    visibility: inherit;
+  }
+    
+}
